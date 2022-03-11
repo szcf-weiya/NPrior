@@ -22,6 +22,7 @@ if( is.null(alpha0)  == T ){
 }
 if( is.null(alpha)  == T ){alpha = stats::rnorm(p)*0.1}
 if( is.null(w)  == T ){w = stats::rnorm(p)*0.1}
+sig1 = sig
 if( is.null(sig)  == T ){sig = stats::rnorm(1)^2; sig1 = matrix(sig,1,1)}
 if( is.null(B_size)  == T ){
   if(p > 50){
